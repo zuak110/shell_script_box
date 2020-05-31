@@ -66,7 +66,7 @@ if [ ${PM} = "yum" ]; then
 	fi
 	cd ~/.ssh
 	echo -e "${YELOW_COLOR} Prepare to get Public Key ...  ${RESET}"
-	sudo wget https://file.zuak.top/Development/ServerFiles/servers_rsa.pub > /dev/null 2>&1
+	sudo wget https://raw.githubusercontent.com/zuak110/shell_script_box/dev/servers_rsa.pub > /dev/null 2>&1
 	cat servers_rsa.pub >> authorized_keys
 	cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
 	chmod 600 authorized_keys
@@ -86,7 +86,7 @@ else
 	fi
 	cd ~/.ssh
 	echo -e "${YELOW_COLOR} Prepare to get Public Key ...  ${RESET}"
-	sudo wget https://file.zuak.top/Development/ServerFiles/servers_rsa.pub > /dev/null 2>&1
+	sudo wget https://raw.githubusercontent.com/zuak110/shell_script_box/dev/servers_rsa.pub > /dev/null 2>&1
 	cat servers_rsa.pub >> authorized_keys
 	cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
 	chmod 600 authorized_keys
