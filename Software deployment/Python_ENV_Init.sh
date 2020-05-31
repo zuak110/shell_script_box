@@ -295,7 +295,7 @@ fi
 
 cd ${BASEPATH}
 
-sudo wget https://file.zuak.top/Development/banner > /dev/null 2>&1
+sudo wget https://raw.githubusercontent.com/zuak110/shell_script_box/dev/banner > /dev/null 2>&1
 sudo cat banner
 sudo rm -f banner
 
